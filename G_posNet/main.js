@@ -71,17 +71,19 @@ function draw() {
   let level = map(deep/2, 0, 300, 0,100)
 
 
-
+  console.log(deep)
   //map
   const w = deep / width * 1000.0
+  const prova = floor(map(deep,0,300,0,100))
   const c = x / width * 1000.0
 
   //Il CSS che va a modificare
-  lettera.style["font-variation-settings"] = " 'wght' " + w + "," + " 'CONT' " + c;
+  lettera.style["font-variation-settings"] = " 'SIZE' " + prova
+  //+ "," + " 'CONT' " + c;
   lettera.style.transform = "translateY(-" + deep*0.7 + "px)";
 
-  console.log(w)
-  console.log(c)
+  //console.log(w)
+  //console.log(c)
 
   if(miniMapOn) displayMiniMap(0 + 100, height - 80, 0.2);
 }
