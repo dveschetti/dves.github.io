@@ -68,17 +68,17 @@ function draw() {
  
   const deep = size.x/3
   const x = map(pos.x,width/2,width, 0,width)
-  let level = map(deep/2, 0, 300, 0,100)
+  let level = map(deep/2, 0, 300, -100,100)
 
 
   console.log(deep)
   //map
   const w = deep / width * 1000.0
-  const prova = floor(map(deep,0,300,0,100))
+  const prova = floor(map(deep,0,300,-100,100))
   const c = x / width * 1000.0
 
   //Il CSS che va a modificare
-  lettera.style["font-variation-settings"] = " 'SIZE' " + prova
+  lettera.style["font-variation-settings"] = " 'SAJO' " + prova
   //+ "," + " 'CONT' " + c;
   lettera.style.transform = "translateY(-" + deep*0.7 + "px)";
 
